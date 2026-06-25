@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt & Erstgespräch | Nadine Joest – Business Support</title>
+  <meta name="description" content="Kostenloses Erstgespräch buchen oder direkt Kontakt aufnehmen. Ich antworte innerhalb eines Werktages und freue mich auf deine Nachricht." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:image" content="https://nadinejoest.de/og-bild.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RC08P9P7K7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RC08P9P7K7');
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="canonical" href="https://nadinejoest.de/kontakt.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+<header>
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Nadine Joest</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        <li><a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Erstgespräch buchen</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Kontakt">
+    <div class="container">
+      <span class="label">Kontakt</span>
+      <h1>Lass uns sprechen.</h1>
+      <p>Du möchtest wissen, ob wir zusammenpassen? Am schnellsten geht es mit einem kostenlosen Erstgespräch. Oder schreib mir direkt, ich antworte innerhalb eines Werktages.</p>
+    </div>
+  </section>
+
+  <!-- KONTAKT INHALT -->
+  <section class="section" aria-label="Kontaktmöglichkeiten">
+    <div class="container">
+      <div class="kontakt-grid">
+
+        <!-- FORMULAR -->
+        <div>
+          <span class="label">Direktnachricht</span>
+          <h2 style="margin-bottom: 8px;">Schreib mir</h2>
+          <p style="margin-bottom: 32px;">Erzähl mir kurz, wer du bist, was du machst und wobei ich dir helfen kann.</p>
+
+          <div class="kontakt-form-box">
+            <!--
+              TECHNISCHE HINWEISE FÜR ENTWICKLER:
+              Formular mit Formspree, Netlify Forms oder PHP Mailer verbinden.
+              Ziel-E-Mail: kontakt@nadinejoest.de
+              Honeypot-Feld ist bereits eingebaut (unsichtbares Feld gegen Spam).
+              CSRF-Token je nach Backend ergänzen.
+            -->
+            <form
+              id="kontakt-formular"
+              action="https://formspree.io/f/xjgdpnnd"
+              method="POST"
+              aria-label="Kontaktformular"
+              novalidate
+            >
+              <!-- Honeypot -->
+              <input type="text" name="_honeypot" style="display:none;" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="_subject" value="Neue Anfrage von nadinejoest.de" />
+
+              <div class="form-group">
+                <label for="name">Name <span aria-hidden="true" style="color: var(--primary);">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Dein Name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse <span aria-hidden="true" style="color: var(--primary);">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="deine@email.de"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefon">
+                  Telefon
+                  <span style="color: var(--text-muted); font-weight: 400;">(optional)</span>
+                </label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  placeholder="0151 ..."
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nachricht">Deine Nachricht <span aria-hidden="true" style="color: var(--primary);">*</span></label>
+                <textarea
+                  id="nachricht"
+                  name="nachricht"
+                  placeholder="Erzähl mir kurz: Wer bist du, was machst du und wobei kann ich dich unterstützen?"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="datenschutz"
+                  name="datenschutz"
+                  required
+                  aria-required="true"
+                />
+                <label for="datenschutz">
+                  Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin damit einverstanden, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden. <span aria-hidden="true">*</span>
+                </label>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Nachricht absenden</button>
+              </div>
+              <p class="form-note">Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+
+              <div id="form-success" style="display: none; margin-top: 16px; padding: 16px; background: var(--primary-light); border-radius: var(--radius); color: var(--text); font-size: 14px;">
+                Vielen Dank für deine Nachricht. Ich melde mich innerhalb eines Werktages bei dir.
+              </div>
+              <div id="form-error" style="display: none; margin-top: 16px; padding: 16px; background: #fdecea; border-radius: var(--radius); color: #c0392b; font-size: 14px;">
+                Es ist ein Fehler aufgetreten. Bitte schreib mir direkt an <a href="mailto:kontakt@nadinejoest.de">kontakt@nadinejoest.de</a>.
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- KONTAKTINFO + CALENDLY -->
+        <div class="kontakt-info">
+          <span class="label">Oder direkt einen Termin buchen</span>
+          <div class="calendly-box">
+            <h3>Kostenloses Erstgespräch (30 Min.)</h3>
+            <p>Kein Verkaufsgespräch, kein Druck. Wir schauen gemeinsam, ob und wie ich dir helfen kann, und ob wir zueinander passen.</p>
+            <a
+              href="https://calendly.com/kontakt-nadinejoest/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Termin buchen via Calendly
+            </a>
+          </div>
+
+          <div style="margin-top: 44px;">
+            <h2 style="font-size: 26px; margin-bottom: 6px;">Kontaktdaten</h2>
+            <p style="margin-bottom: 4px;">Ich bin per E-Mail, Telefon oder Formular erreichbar.</p>
+            <ul class="kontakt-data">
+              <li>
+                <div class="kontakt-icon" aria-hidden="true"></div>
+                <div>
+                  <strong style="display: block; font-size: 13px; color: var(--text); margin-bottom: 2px;">E-Mail</strong>
+                  <a href="mailto:kontakt@nadinejoest.de">kontakt@nadinejoest.de</a>
+                </div>
+              </li>
+              <li>
+                <div class="kontakt-icon" aria-hidden="true"></div>
+                <div>
+                  <strong style="display: block; font-size: 13px; color: var(--text); margin-bottom: 2px;">Telefon</strong>
+                  <a href="tel:+4915167076970">0151 67076970</a>
+                </div>
+              </li>
+              <li>
+                <div class="kontakt-icon" aria-hidden="true"></div>
+                <div>
+                  <strong style="display: block; font-size: 13px; color: var(--text); margin-bottom: 2px;">Standort</strong>
+                  Mettmann (NRW) · Remote deutschlandweit
+                </div>
+              </li>
+              <li>
+                <div class="kontakt-icon" aria-hidden="true"></div>
+                <div>
+                  <strong style="display: block; font-size: 13px; color: var(--text); margin-bottom: 2px;">Antwortzeit</strong>
+                  In der Regel innerhalb von 1 Werktag
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">Nadine Joest</span>
+      <p>Business Support Partnerin für Coaches, Beraterinnen und Unternehmerinnen.</p>
+      <p class="footer-tagline">"Erledigt, bevor es auf deiner To-do-Liste landet."</p>
+    </div>
+    <div>
+      <p class="footer-heading">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Leistungen</p>
+      <ul class="footer-links">
+        <li><a href="leistungen.html">Business Support</a></li>
+        <li><a href="leistungen.html">Controlling & Unternehmenszahlen</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Kontakt</p>
+      <ul class="footer-links">
+        <li><a href="mailto:kontakt@nadinejoest.de">kontakt@nadinejoest.de</a></li>
+        <li><a href="tel:+4915167076970">0151 67076970</a></li>
+        <li><a href="kontakt.html">Nachricht schreiben</a></li>
+        <li><a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener">Erstgespräch buchen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Nadine Joest · Alle Rechte vorbehalten</span>
+    <div class="footer-legal">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

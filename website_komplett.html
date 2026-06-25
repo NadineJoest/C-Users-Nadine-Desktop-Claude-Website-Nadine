@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadine Joest | Business Support Partnerin für Coaches & Unternehmerinnen</title>
+  <meta name="description" content="Ich entlaste Solopreneurinnen und kleine Unternehmen operativ – mit analytischem Verständnis, Prozessexpertise und Zuverlässigkeit. Jetzt kostenloses Erstgespräch buchen." />
+  <meta name="keywords" content="Business Support, Virtuelle Assistenz, Backoffice Support, Prozessoptimierung, Controlling für Selbstständige, Virtuelle Unterstützung Coaches" />
+  <meta name="author" content="Nadine Joest" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nadine Joest | Business Support Partnerin" />
+  <meta property="og:description" content="Operative Entlastung mit analytischem Verständnis – für Coaches, Beraterinnen und Unternehmerinnen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+
+  <style>
+    /* ============================================
+       DESIGN SYSTEM
+       ============================================ */
+    :root {
+      --color-primary: #8C9795;
+      --color-primary-dark: #7A8A87;
+      --color-primary-light: #E8EDE9;
+      --color-beige: #F5F0E8;
+      --color-beige-dark: #EDE8DF;
+      --color-text: #2D2D2D;
+      --color-text-muted: #6B6B6B;
+      --color-white: #FFFFFF;
+      --color-bg: #FAFAF8;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', 'Inter', system-ui, sans-serif;
+      --max-width: 1100px;
+      --radius: 8px;
+      --shadow: 0 2px 20px rgba(0,0,0,0.06);
+      --shadow-hover: 0 8px 40px rgba(0,0,0,0.12);
+      --transition: all 0.3s ease;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* Google Fonts Import Hint (in production add to <head>):
+       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+    */
+
+    h1, h2, h3 { font-family: var(--font-heading); font-weight: 400; line-height: 1.2; color: var(--color-text); }
+    h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 300; }
+    h2 { font-size: clamp(28px, 4vw, 42px); }
+    h3 { font-size: clamp(20px, 2.5vw, 26px); }
+    h4 { font-family: var(--font-body); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--color-primary); margin-bottom: 12px; }
+    p { margin-bottom: 16px; color: var(--color-text-muted); }
+    a { color: var(--color-primary); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--color-primary-dark); }
+    strong { color: var(--color-text); }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+    .section { padding: 96px 0; }
+    .section-sm { padding: 64px 0; }
+    .section-alt { background: var(--color-beige); }
+    .section-dark { background: var(--color-text); color: var(--color-white); }
+    .section-dark h2, .section-dark h3, .section-dark h4 { color: var(--color-white); }
+    .section-dark p { color: rgba(255,255,255,0.75); }
+    .section-primary { background: var(--color-primary); }
+    .section-primary h2, .section-primary h3, .section-primary p, .section-primary h4 { color: var(--color-white); }
+
+    .text-center { text-align: center; }
+    .text-center p { max-width: 680px; margin-left: auto; margin-right: auto; }
+    .label { font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--color-primary); display: block; margin-bottom: 12px; }
+    .divider { width: 48px; height: 2px; background: var(--color-primary); margin: 20px auto 32px; }
+    .divider-left { margin-left: 0; }
+
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 2px solid transparent;
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-dark);
+      border-color: var(--color-primary-dark);
+      color: var(--color-white);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(140,151,149,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+    .btn-outline:hover {
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+    .btn-white {
+      background: var(--color-white);
+      color: var(--color-text);
+      border-color: var(--color-white);
+    }
+    .btn-white:hover {
+      background: var(--color-beige);
+      color: var(--color-text);
+    }
+    .btn-outline-white {
+      background: transparent;
+      color: var(--color-white);
+      border-color: rgba(255,255,255,0.6);
+    }
+    .btn-outline-white:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--color-white);
+      color: var(--color-white);
+    }
+
+    /* ============================================
+       NAVIGATION
+       ============================================ */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 18px 0;
+    }
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--color-text);
+      letter-spacing: 0.5px;
+    }
+    .nav-logo span { color: var(--color-primary); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      letter-spacing: 0.3px;
+    }
+    .nav-links a:hover { color: var(--color-primary); }
+    .nav-links .btn { margin-left: 8px; padding: 10px 24px; }
+
+    /* ============================================
+       HERO — STARTSEITE
+       ============================================ */
+    .hero {
+      background: var(--color-beige);
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(140,151,149,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .hero-content {}
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+    }
+    .hero h1 { margin-bottom: 24px; }
+    .hero h1 em { font-style: normal; color: var(--color-primary); }
+    .hero-subtitle {
+      font-size: 18px;
+      color: var(--color-text-muted);
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .hero-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+    }
+    .hero-link:hover { color: var(--color-primary); }
+    .hero-image {
+      position: relative;
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 460px;
+      border-radius: 12px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      box-shadow: var(--shadow-hover);
+    }
+    .hero-image-placeholder {
+      width: 100%;
+      max-width: 460px;
+      aspect-ratio: 3/4;
+      background: var(--color-primary-light);
+      border-radius: 12px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+    .hero-trust-item { font-size: 13px; color: var(--color-text-muted); }
+    .hero-trust-num { font-family: var(--font-heading); font-size: 28px; color: var(--color-text); display: block; font-weight: 500; }
+
+    /* ============================================
+       PROBLEM / PAIN POINTS
+       ============================================ */
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .pain-card {
+      background: var(--color-white);
+      border-radius: var(--radius);
+      padding: 32px;
+      border-left: 3px solid var(--color-primary);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    .pain-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .pain-icon { font-size: 28px; margin-bottom: 16px; }
+    .pain-card h3 { font-size: 20px; margin-bottom: 10px; }
+    .pain-card p { font-size: 15px; margin: 0; }
+
+    /* ============================================
+       USP / STÄRKEN
+       ============================================ */
+    .usp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .usp-card {
+      text-align: center;
+      padding: 40px 24px;
+      border-radius: var(--radius);
+      background: var(--color-white);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    .usp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-bottom: 3px solid var(--color-primary);
+    }
+    .usp-card-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--color-primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 22px;
+    }
+    .usp-card h3 { font-size: 20px; margin-bottom: 10px; }
+    .usp-card p { font-size: 15px; margin: 0; }
+
+    /* ============================================
+       LEISTUNGSÜBERBLICK (STARTSEITE)
+       ============================================ */
+    .leistung-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .leistung-card {
+      background: var(--color-white);
+      border-radius: var(--radius);
+      padding: 48px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .leistung-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--color-primary);
+    }
+    .leistung-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .leistung-card h3 { margin-bottom: 12px; }
+    .leistung-card p { margin-bottom: 24px; }
+    .leistung-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .leistung-tag {
+      font-size: 12px;
+      padding: 4px 12px;
+      background: var(--color-primary-light);
+      color: var(--color-primary-dark);
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    /* ============================================
+       ÜBER-MICH TEASER (STARTSEITE)
+       ============================================ */
+    .about-teaser {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-teaser img, .about-teaser .img-placeholder {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-hover);
+    }
+    .about-teaser .img-placeholder {
+      aspect-ratio: 4/5;
+      background: var(--color-primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 14px;
+    }
+
+    /* ============================================
+       CTA BANNER
+       ============================================ */
+    .cta-banner {
+      background: var(--color-text);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .cta-banner h2 { color: var(--color-white); margin-bottom: 16px; }
+    .cta-banner p { color: rgba(255,255,255,0.7); margin-bottom: 36px; font-size: 18px; }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ============================================
+       LEISTUNGSSEITE
+       ============================================ */
+    .page-hero {
+      background: var(--color-beige);
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    .page-hero h1 { margin-bottom: 20px; }
+    .page-hero p { font-size: 19px; max-width: 640px; margin: 0 auto; }
+
+    .leistungen-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 48px;
+    }
+    .leistung-detail-list {
+      list-style: none;
+      padding: 0;
+    }
+    .leistung-detail-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-beige-dark);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--color-text-muted);
+      font-size: 15px;
+    }
+    .leistung-detail-list li::before {
+      content: '✓';
+      color: var(--color-primary);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* PAKETE */
+    .pakete-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+      align-items: start;
+    }
+    .paket-card {
+      background: var(--color-white);
+      border-radius: var(--radius);
+      padding: 36px 24px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      position: relative;
+    }
+    .paket-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .paket-card.featured {
+      background: var(--color-text);
+      color: var(--color-white);
+    }
+    .paket-card.featured h3, .paket-card.featured p, .paket-card.featured li {
+      color: rgba(255,255,255,0.85);
+    }
+    .paket-card.featured h3 { color: var(--color-white); }
+    .paket-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-primary);
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+    .paket-name { font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--color-primary); margin-bottom: 8px; }
+    .paket-card.featured .paket-name { color: var(--color-primary-light); }
+    .paket-preis { font-family: var(--font-heading); font-size: 36px; font-weight: 400; margin-bottom: 4px; color: var(--color-text); }
+    .paket-card.featured .paket-preis { color: var(--color-white); }
+    .paket-suffix { font-size: 13px; color: var(--color-text-muted); margin-bottom: 24px; }
+    .paket-card.featured .paket-suffix { color: rgba(255,255,255,0.6); }
+    .paket-list { list-style: none; padding: 0; margin-bottom: 28px; }
+    .paket-list li { padding: 7px 0; display: flex; gap: 10px; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .paket-card.featured .paket-list li { border-bottom-color: rgba(255,255,255,0.08); }
+    .paket-list li::before { content: '→'; color: var(--color-primary); font-weight: 700; flex-shrink: 0; }
+    .paket-card.featured .paket-list li::before { color: var(--color-primary-light); }
+    .paket-card .btn { width: 100%; justify-content: center; display: flex; }
+
+    /* PROZESS */
+    .prozess-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      margin-top: 48px;
+      position: relative;
+    }
+    .prozess-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 60px;
+      right: 60px;
+      height: 2px;
+      background: var(--color-primary-light);
+      z-index: 0;
+    }
+    .prozess-step { text-align: center; position: relative; z-index: 1; padding: 0 10px; }
+    .prozess-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: white;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-weight: 400;
+    }
+    .prozess-step h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 500; color: var(--color-text); letter-spacing: 0; text-transform: none; margin-bottom: 6px; }
+    .prozess-step p { font-size: 13px; margin: 0; }
+
+    /* FAQ */
+    .faq-list { margin-top: 40px; max-width: 780px; margin-left: auto; margin-right: auto; }
+    .faq-item { border-bottom: 1px solid var(--color-beige-dark); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 22px 0;
+      font-size: 17px;
+      font-family: var(--font-heading);
+      color: var(--color-text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-question:hover { color: var(--color-primary); }
+    .faq-icon { font-size: 22px; color: var(--color-primary); flex-shrink: 0; transition: var(--transition); }
+    .faq-answer { padding: 0 0 20px; font-size: 15px; color: var(--color-text-muted); line-height: 1.7; display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    /* ============================================
+       ÜBER MICH
+       ============================================ */
+    .about-hero {
+      background: var(--color-beige);
+      padding: 100px 0 0;
+    }
+    .about-hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: end;
+    }
+    .about-hero-content { padding-bottom: 80px; }
+    .about-hero-img img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+      object-fit: cover;
+      display: block;
+    }
+    .about-hero-img .img-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--color-primary-light);
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--color-primary);
+    }
+
+    .werte-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .wert-card {
+      padding: 28px;
+      background: var(--color-white);
+      border-radius: var(--radius);
+      border-left: 3px solid var(--color-primary);
+    }
+    .wert-card h3 { font-size: 19px; margin-bottom: 8px; }
+    .wert-card p { font-size: 14px; margin: 0; }
+
+    .erfahrung-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .erfahrung-card {
+      text-align: center;
+      padding: 36px 20px;
+      background: var(--color-white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .erfahrung-zahl {
+      font-family: var(--font-heading);
+      font-size: 52px;
+      font-weight: 300;
+      color: var(--color-primary);
+      display: block;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .erfahrung-card p { font-size: 14px; margin: 0; }
+
+    /* ============================================
+       KONTAKTSEITE
+       ============================================ */
+    .kontakt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .kontakt-form {
+      background: var(--color-white);
+      border-radius: var(--radius);
+      padding: 48px;
+      box-shadow: var(--shadow);
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid rgba(0,0,0,0.12);
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-bg);
+      transition: var(--transition);
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--color-primary);
+      background: var(--color-white);
+      box-shadow: 0 0 0 3px rgba(140,151,149,0.15);
+    }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-check { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 24px; }
+    .form-check input[type="checkbox"] { width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; accent-color: var(--color-primary); }
+    .form-check label { font-size: 13px; color: var(--color-text-muted); }
+    .form-check a { color: var(--color-primary); }
+    .form-submit .btn { width: 100%; }
+    .form-note { font-size: 12px; color: var(--color-text-muted); margin-top: 12px; text-align: center; }
+
+    .kontakt-info h3 { margin-bottom: 16px; }
+    .kontakt-info p { margin-bottom: 8px; }
+    .kontakt-data { list-style: none; margin: 24px 0; }
+    .kontakt-data li {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-beige-dark);
+      font-size: 15px;
+      align-items: flex-start;
+    }
+    .kontakt-icon { color: var(--color-primary); font-size: 18px; flex-shrink: 0; width: 24px; }
+
+    .calendly-box {
+      background: var(--color-beige);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-top: 32px;
+      border-left: 3px solid var(--color-primary);
+    }
+    .calendly-box h3 { font-size: 22px; margin-bottom: 10px; }
+    .calendly-box p { margin-bottom: 20px; font-size: 15px; }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--color-text);
+      padding: 64px 0 32px;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand {}
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      color: var(--color-white);
+      margin-bottom: 12px;
+      display: block;
+    }
+    .footer-tagline { font-size: 14px; margin-bottom: 0; font-style: italic; }
+    .footer-heading {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-primary-light);
+      margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { color: rgba(255,255,255,0.65); font-size: 14px; }
+    .footer-links a:hover { color: var(--color-white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { color: rgba(255,255,255,0.5); }
+    .footer-legal a:hover { color: var(--color-white); }
+
+    /* ============================================
+       IMPRESSUM
+       ============================================ */
+    .impressum-content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+    .impressum-content h1 { font-size: 36px; margin-bottom: 40px; }
+    .impressum-content h2 { font-size: 22px; margin: 32px 0 12px; }
+    .impressum-content p { font-size: 15px; line-height: 1.7; }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 900px) {
+      .hero .container { grid-template-columns: 1fr; }
+      .hero-image { order: -1; }
+      .hero-image-placeholder { max-width: 320px; aspect-ratio: 1/1; }
+      .pain-grid, .usp-grid, .werte-grid, .erfahrung-grid { grid-template-columns: 1fr; }
+      .leistung-grid, .about-teaser, .kontakt-grid, .about-hero .container { grid-template-columns: 1fr; }
+      .pakete-grid { grid-template-columns: 1fr 1fr; }
+      .prozess-steps { grid-template-columns: 1fr; }
+      .prozess-steps::before { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .leistungen-detail { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      .pakete-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .kontakt-form { padding: 28px 20px; }
+      h1 { font-size: 32px; }
+    }
+
+    /* ============================================
+       HILFSELEMENTE
+       ============================================ */
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      background: var(--color-primary-light);
+      color: var(--color-primary-dark);
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .text-highlight { color: var(--color-primary); }
+    .blockquote {
+      border-left: 3px solid var(--color-primary);
+      padding: 20px 28px;
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-text);
+      background: var(--color-beige);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 32px 0;
+    }
+    .two-col-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 700px) { .two-col-text { grid-template-columns: 1fr; } }
+
+    /* Skip-Link (Barrierefreiheit) */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 10px;
+      background: var(--color-primary);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      z-index: 9999;
+    }
+    .skip-link:focus { top: 10px; }
+  </style>
+</head>
+<body>
+
+<!-- ========================================================
+     SKIP LINK (BARRIEREFREIHEIT)
+     ======================================================== -->
+<a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+<!-- ========================================================
+     NAVIGATION
+     ======================================================== -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <a href="#startseite" class="nav-logo">Nadine <span>Joest</span></a>
+      <ul class="nav-links">
+        <li><a href="#startseite">Start</a></li>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-primary">Erstgespräch buchen →</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ========================================================
+     SEITE 1: STARTSEITE
+     ======================================================== -->
+<section id="startseite" class="hero" aria-label="Willkommen">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Business Support Partnerin</span>
+      <h1>
+        Damit du dich auf dein Business konzentrieren kannst —
+        <em>nicht auf das Drumherum.</em>
+      </h1>
+      <p class="hero-subtitle">
+        Ich entlaste Coaches, Beraterinnen und Unternehmerinnen von operativen Aufgaben, schaffe Struktur in ihrem Alltag und denke mit — damit Raum für das entsteht, was wirklich zählt: dein Wachstum.
+      </p>
+      <div class="hero-actions">
+        <a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-primary">
+          Kostenloses Erstgespräch →
+        </a>
+        <a href="#leistungen" class="hero-link">Leistungen ansehen</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <span class="hero-trust-num">13</span>
+          Jahre Berufserfahrung
+        </div>
+        <div style="width:1px; height:40px; background:rgba(0,0,0,0.1);"></div>
+        <div class="hero-trust-item">
+          <span class="hero-trust-num">6</span>
+          Jahre Controlling
+        </div>
+        <div style="width:1px; height:40px; background:rgba(0,0,0,0.1);"></div>
+        <div class="hero-trust-item">
+          <span class="hero-trust-num">100%</span>
+          Zuverlässigkeit
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!--
+        BILDEMPFEHLUNG: Foto "1.jpg" von Nadine einsetzen.
+        <img src="bilder/1.jpg" alt="Nadine Joest – Business Support Partnerin" loading="eager" />
+        Alternativ: Bild 2 (am Schreibtisch) für dynamischere Wirkung
+      -->
+      <div class="hero-image-placeholder" aria-label="Portrait Nadine Joest">
+        [ Foto: Portrait Nadine Joest ]<br>
+        <small style="margin-top:6px; opacity:0.7;">→ bilder/1.jpg einsetzen</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM / PAIN POINTS -->
+<section class="section section-alt" aria-labelledby="problem-heading">
+  <div class="container">
+    <div class="text-center">
+      <span class="label">Kommt dir das bekannt vor?</span>
+      <h2 id="problem-heading">Du liebst dein Business. Aber der operative Alltag raubt dir die Energie.</h2>
+      <div class="divider"></div>
+      <p>
+        Du hast ein klares Angebot, zufriedene Kundinnen und eine Vision — aber der Schreibtisch quillt über,
+        die Inbox wartet und strategische Weiterentwicklung bleibt wieder auf morgen verschoben.
+        Das kenne ich. Und genau dafür bin ich da.
+      </p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">⏳</div>
+        <h3>Zu wenig Zeit für das Wesentliche</h3>
+        <p>Du verbringst Stunden mit E-Mails, Terminplanung und Papierkram — statt dich um Kundinnen und Wachstum zu kümmern.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🌀</div>
+        <h3>Fehlende Struktur im Alltag</h3>
+        <p>Prozesse, die nicht dokumentiert sind. Aufgaben, die nirgendwo landen. Ein Business, das von deiner Anwesenheit abhängt.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">📉</div>
+        <h3>Kein Überblick über die Zahlen</h3>
+        <p>Du weißt, was du verdienst — aber was deine Zahlen über dein Business aussagen, bleibt im Dunkeln.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LÖSUNG / USPs -->
+<section class="section" aria-labelledby="loesung-heading">
+  <div class="container">
+    <div class="text-center">
+      <span class="label">Die Lösung</span>
+      <h2 id="loesung-heading">Nicht eine weitere Assistentin. Eine Partnerin, die mitdenkt.</h2>
+      <div class="divider"></div>
+      <p>
+        Ich übernehme nicht einfach Aufgaben — ich erkenne Zusammenhänge, schaffe Strukturen und bringe Ordnung
+        in das, was dich täglich bremst. Mit 13 Jahren Berufserfahrung und 6 Jahren im Controlling
+        denke ich unternehmerisch, handle eigenständig und liefere zuverlässig.
+      </p>
+    </div>
+    <div class="usp-grid">
+      <div class="usp-card">
+        <div class="usp-card-icon">🧠</div>
+        <h3>Analytisch denken</h3>
+        <p>Ich erkenne Muster, identifiziere Schwachstellen und denke über die Aufgabe hinaus — mit einem Blick für das große Ganze.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card-icon">✅</div>
+        <h3>Zuverlässig handeln</h3>
+        <p>Erledigt bedeutet erledigt. Ohne Nachfragen, ohne Erinnerungen. Du kannst dich auf mich verlassen — so wie auf eine Kollegin.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card-icon">🏗️</div>
+        <h3>Strukturen schaffen</h3>
+        <p>Ich dokumentiere, optimiere und etabliere Abläufe, die auch dann funktionieren, wenn du nicht da bist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGSÜBERBLICK -->
+<section class="section section-alt" id="leistungen-uebersicht" aria-labelledby="leistungen-heading">
+  <div class="container">
+    <div class="text-center">
+      <span class="label">Was ich tue</span>
+      <h2 id="leistungen-heading">Zwei Bereiche. Ein Ziel: Mehr Freiraum für dich.</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="leistung-grid">
+      <div class="leistung-card">
+        <span class="badge">Leistungsbereich 1</span>
+        <h3>Business Support</h3>
+        <p>
+          Von der Inbox bis zur Rechnungsvorbereitung — ich übernehme die operativen Aufgaben,
+          die dich täglich bremsen. Zuverlässig, eigenständig und strukturiert.
+        </p>
+        <div class="leistung-tags">
+          <span class="leistung-tag">E-Mail-Management</span>
+          <span class="leistung-tag">Kalendermanagement</span>
+          <span class="leistung-tag">Kundenkommunikation</span>
+          <span class="leistung-tag">Prozessoptimierung</span>
+          <span class="leistung-tag">Recruiting-Support</span>
+        </div>
+        <a href="#leistungen" class="btn btn-outline">Alle Leistungen ansehen →</a>
+      </div>
+      <div class="leistung-card">
+        <span class="badge">Leistungsbereich 2</span>
+        <h3>Controlling & Unternehmenszahlen</h3>
+        <p>
+          Deine Zahlen erzählen eine Geschichte über dein Business. Ich helfe dir, sie zu lesen und
+          Entscheidungen auf einer soliden Datenbasis zu treffen — ohne Finanzstudium.
+        </p>
+        <div class="leistung-tags">
+          <span class="leistung-tag">KPI-Dashboards</span>
+          <span class="leistung-tag">Umsatzanalysen</span>
+          <span class="leistung-tag">Monatsreportings</span>
+          <span class="leistung-tag">Soll-Ist-Vergleiche</span>
+          <span class="leistung-tag">Rentabilitätsanalysen</span>
+        </div>
+        <a href="#leistungen" class="btn btn-outline">Mehr erfahren →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER MICH TEASER -->
+<section class="section" aria-labelledby="about-teaser-heading">
+  <div class="container">
+    <div class="about-teaser">
+      <div class="about-teaser-img">
+        <!--
+          BILDEMPFEHLUNG: Schreibtisch-Foto (Bild 2 — noch zu erstellen)
+          <img src="bilder/nadine-schreibtisch.jpg" alt="Nadine Joest am Schreibtisch" loading="lazy" />
+        -->
+        <div class="img-placeholder" style="aspect-ratio:4/5; display:flex; align-items:center; justify-content:center; background:var(--color-primary-light); border-radius:12px; font-size:13px; color:var(--color-primary);">
+          [ Bild 2: Nadine am Schreibtisch ]<br>
+          <small style="opacity:0.7; margin-top:4px;">→ noch zu erstellen</small>
+        </div>
+      </div>
+      <div>
+        <span class="label">Über mich</span>
+        <h2 id="about-teaser-heading">Ich bin Nadine — und ich tue, was mir wirklich Freude macht.</h2>
+        <div class="divider divider-left"></div>
+        <p>
+          Nach 13 Jahren in Versicherung, Verwaltung und Controlling habe ich mich selbstständig gemacht —
+          nicht weil ich musste, sondern weil ich endlich das tun wollte, was mich täglich antreibt:
+          anderen helfen, Ordnung in ihr Business zu bringen.
+        </p>
+        <p>
+          Ich begeistere mich für Persönlichkeitsentwicklung, Gesundheit und einen bewussten Lebensstil.
+          Deshalb arbeite ich am liebsten mit Unternehmerinnen zusammen, die mit ihrer Arbeit einen
+          positiven Beitrag leisten — und die Unterstützung verdienen, die sie brauchen.
+        </p>
+        <div class="blockquote">
+          „Du bist Expertin in deinem Business. Ich bin Expertin darin, es am Laufen zu halten."
+        </div>
+        <a href="#ueber-mich" class="btn btn-primary">Mehr über mich →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner" aria-labelledby="cta-heading">
+  <div class="container">
+    <h2 id="cta-heading">Bereit, Ballast loszuwerden?</h2>
+    <p>In einem kostenlosen 30-Minuten-Erstgespräch schauen wir gemeinsam, wo ich dich am sinnvollsten entlasten kann. Unverbindlich und ohne Druck.</p>
+    <div class="cta-actions">
+      <a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-white">
+        Jetzt Erstgespräch buchen →
+      </a>
+      <a href="#kontakt" class="btn btn-outline-white">Nachricht schreiben</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     SEITE 2: LEISTUNGEN
+     ======================================================== -->
+<section id="leistungen" aria-label="Leistungen">
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Meine Leistungen</span>
+      <h1>Mehr als Assistenz.<br>Dein Business Support.</h1>
+      <p>
+        Ich übernehme das operative Tagesgeschäft, optimiere Prozesse und liefere dir
+        Einblicke in deine Zahlen — damit du dich auf das konzentrieren kannst, was dein Business weiterbringt.
+      </p>
+    </div>
+  </div>
+
+  <!-- Business Support Detail -->
+  <div class="section" aria-labelledby="bs-heading">
+    <div class="container">
+      <div class="two-col-text">
+        <div>
+          <span class="label">Leistungsbereich 1</span>
+          <h2 id="bs-heading">Business Support</h2>
+          <div class="divider divider-left"></div>
+          <p>
+            Dein Alltag läuft — auch wenn du nicht an allem gleichzeitig sitzt.
+            Ich übernehme die wiederkehrenden operativen Aufgaben, die Zeit und Konzentration fressen,
+            und erledige sie zuverlässig und eigenständig.
+          </p>
+          <p>
+            Ob Inbox-Management, Terminkoordination oder die Vorbereitung von Angeboten:
+            Ich arbeite strukturiert, vorausschauend und so, dass du immer den Überblick behältst.
+          </p>
+        </div>
+        <div>
+          <ul class="leistung-detail-list" aria-label="Business Support Leistungen">
+            <li>E-Mail-Management (Sortieren, Filtern, Antworten nach Absprache)</li>
+            <li>Kalendermanagement & Terminkoordination</li>
+            <li>Kundenkommunikation (schriftlich & telefonisch)</li>
+            <li>Prozessoptimierung & -dokumentation</li>
+            <li>Prozesspflege & Aktualisierung</li>
+            <li>Reiseplanung & -organisation</li>
+            <li>Angebotsvorbereitung</li>
+            <li>Rechnungsvorbereitung</li>
+            <li>Dokumentenvorbereitung & -verwaltung</li>
+            <li>Recherchearbeiten (Markt, Anbieter, Tools, Themen)</li>
+            <li>Telefonservice & Bewerbertelefonie</li>
+            <li>Recruiting-Unterstützung</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controlling Detail -->
+  <div class="section section-alt" aria-labelledby="controlling-heading">
+    <div class="container">
+      <div class="two-col-text">
+        <div>
+          <ul class="leistung-detail-list" aria-label="Controlling Leistungen">
+            <li>Umsatzanalysen (monatlich, quartalsweise, jährlich)</li>
+            <li>Angebotsanalysen (Conversion, Durchschnittswert, Entwicklung)</li>
+            <li>Produktanalysen (Was läuft? Was lohnt sich?)</li>
+            <li>Rentabilitätsanalysen</li>
+            <li>Marketing-Kennzahlen (Reichweite, Leads, Conversion)</li>
+            <li>Soll-Ist-Vergleiche</li>
+            <li>KPI-Dashboards (übersichtlich, individuell angepasst)</li>
+            <li>Monatsreportings mit Handlungsempfehlungen</li>
+          </ul>
+        </div>
+        <div>
+          <span class="label">Leistungsbereich 2</span>
+          <h2 id="controlling-heading">Controlling & Unternehmenszahlen</h2>
+          <div class="divider divider-left"></div>
+          <p>
+            Deine Zahlen sind mehr als Buchführung — sie sind dein Kompass.
+            Mit 6 Jahren Controlling-Erfahrung helfe ich dir, deine Unternehmenskennzahlen
+            zu verstehen, zu beobachten und für kluge Entscheidungen zu nutzen.
+          </p>
+          <p>
+            Kein Finanzjargon, keine überkomplexen Tabellen.
+            Sondern klare Auswertungen, die zeigen, was in deinem Business wirklich passiert —
+            und wo Potenzial noch ungenutzt liegt.
+          </p>
+          <p style="font-size:14px; color:var(--color-primary);">
+            <strong>Individuelle Leistungen nach Absprache.</strong>
+            Je nach Bedarf als Einmalprojekt oder monatliches Reporting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pakete -->
+  <div class="section" aria-labelledby="pakete-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="label">Transparente Preise</span>
+        <h2 id="pakete-heading">Klare Pakete. Kalkulierbare Kosten.</h2>
+        <div class="divider"></div>
+        <p>Alle Pakete sind monatlich buchbar und auf langfristige Zusammenarbeit ausgerichtet. Kein Stundenraten-Roulette — du weißt, was du bekommst.</p>
+      </div>
+      <div class="pakete-grid">
+
+        <!-- Starter -->
+        <div class="paket-card">
+          <div class="paket-name">Starter</div>
+          <div class="paket-preis">ab 299 €</div>
+          <div class="paket-suffix">zzgl. MwSt. / Monat</div>
+          <ul class="paket-list">
+            <li>E-Mail-Management</li>
+            <li>Kundenkommunikation</li>
+            <li>Kalendermanagement</li>
+            <li>Prozessoptimierung</li>
+          </ul>
+          <a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-outline">Erstgespräch buchen</a>
+        </div>
+
+        <!-- Business -->
+        <div class="paket-card featured">
+          <div class="paket-badge">Beliebt</div>
+          <div class="paket-name">Business</div>
+          <div class="paket-preis">ab 349 €</div>
+          <div class="paket-suffix">zzgl. MwSt. / Monat</div>
+          <ul class="paket-list">
+            <li>Alles aus Starter</li>
+            <li>Reiseplanung</li>
+            <li>Angebotsvorbereitung</li>
+            <li>Rechnungsvorbereitung</li>
+            <li>Dokumentenvorbereitung</li>
+          </ul>
+          <a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-primary">Jetzt anfragen →</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="paket-card">
+          <div class="paket-name">Premium</div>
+          <div class="paket-preis">ab 499 €</div>
+          <div class="paket-suffix">zzgl. MwSt. / Monat</div>
+          <ul class="paket-list">
+            <li>Alles aus Business</li>
+            <li>Recherchearbeiten</li>
+            <li>Telefonie & Bewerbertelefonie</li>
+            <li>Recruiting-Unterstützung</li>
+          </ul>
+          <a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-outline">Erstgespräch buchen</a>
+        </div>
+
+        <!-- Controlling -->
+        <div class="paket-card">
+          <div class="paket-name">Controlling</div>
+          <div class="paket-preis">Individuell</div>
+          <div class="paket-suffix">nach Absprache</div>
+          <ul class="paket-list">
+            <li>KPI-Dashboards</li>
+            <li>Umsatz- & Produktanalysen</li>
+            <li>Monatsreportings</li>
+            <li>Soll-Ist-Vergleiche</li>
+            <li>Marketing-Kennzahlen</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Anfragen</a>
+        </div>
+
+      </div>
+      <p style="text-align:center; margin-top:24px; font-size:14px;">
+        Alle Preise verstehen sich als Mindestpreise. Der genaue Umfang wird im Erstgespräch individuell besprochen.
+      </p>
+    </div>
+  </div>
+
+  <!-- Zusammenarbeit / Prozess -->
+  <div class="section section-alt" aria-labelledby="prozess-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="label">So arbeiten wir zusammen</span>
+        <h2 id="prozess-heading">Von der ersten Nachricht zur langfristigen Partnerschaft.</h2>
+        <div class="divider"></div>
+        <p>Mein Ziel ist eine Zusammenarbeit, die sich anfühlt wie ein Teammitglied — ohne den Aufwand einer Festanstellung.</p>
+      </div>
+      <div class="prozess-steps">
+        <div class="prozess-step">
+          <div class="prozess-num">1</div>
+          <h4>Erstgespräch</h4>
+          <p>Kostenloses 30-Minuten-Gespräch, um deine Situation und Bedürfnisse kennenzulernen</p>
+        </div>
+        <div class="prozess-step">
+          <div class="prozess-num">2</div>
+          <h4>Analyse</h4>
+          <p>Ich analysiere, wo ich dich am sinnvollsten unterstützen kann</p>
+        </div>
+        <div class="prozess-step">
+          <div class="prozess-num">3</div>
+          <h4>Angebot</h4>
+          <p>Du erhältst ein individuelles, transparentes Angebot — kein versteckter Kleingedrucktes</p>
+        </div>
+        <div class="prozess-step">
+          <div class="prozess-num">4</div>
+          <h4>Onboarding</h4>
+          <p>Strukturiertes Onboarding, damit wir schnell und reibungslos in die Zusammenarbeit starten</p>
+        </div>
+        <div class="prozess-step">
+          <div class="prozess-num">5</div>
+          <h4>Langfristig</h4>
+          <p>Wir wachsen gemeinsam — ich lerne dein Business kennen und werde immer wertvoller</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="label">Häufige Fragen</span>
+        <h2 id="faq-heading">Noch offene Fragen?</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Was unterscheidet dich von einer klassischen virtuellen Assistenz?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Eine klassische virtuelle Assistenz führt Aufgaben aus — ich denke darüber hinaus. Mit 6 Jahren Controlling-Erfahrung und einem analytischen Blick auf Zahlen, Prozesse und Zusammenhänge bringe ich eine Tiefe mit, die über das reine „Erledigen" hinausgeht. Ich erkenne, was fehlt, bevor du danach fragen musst, und schaffe Strukturen, die dein Business stabiler und skalierbarer machen.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Für wen ist die Zusammenarbeit besonders geeignet?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Meine Klientinnen sind typischerweise selbstständige Coaches, Beraterinnen, Mentorinnen oder kleine Unternehmen — vor allem aus den Bereichen Persönlichkeitsentwicklung, Gesundheit, Ernährung, Sport und sinnorientierte Dienstleistungen. Gemeinsam ist ihnen: Sie sind gut in dem, was sie tun — brauchen aber jemanden, der das Business dahinter strukturiert und am Laufen hält.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Wie läuft die Zusammenarbeit praktisch ab?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Wir starten mit einem kostenlosen Erstgespräch, in dem ich deine Situation und Bedürfnisse kennenlerne. Danach erhältst du ein individuelles Angebot. Nach Vertragsunterzeichnung folgt ein strukturiertes Onboarding, in dem wir gemeinsam Zugänge, Prozesse und Kommunikationswege einrichten. Die laufende Zusammenarbeit erfolgt remote über Tools wie E-Mail, Telefon und gemeinsam vereinbarte Projektmanagement-Tools.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Sind die Pakete fest oder kann ich Leistungen anpassen?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Die Pakete sind als Orientierung gedacht, nicht als starre Grenzen. Im Erstgespräch schauen wir gemeinsam, was du wirklich brauchst — und ich erstelle dir ein passendes, individuelles Angebot. Falls du im Laufe der Zusammenarbeit mehr oder weniger Unterstützung benötigst, passen wir das gemeinsam an.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Wie schnell bist du erreichbar und wie kommunizieren wir?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Meine Erreichbarkeit und bevorzugten Kommunikationswege legen wir zu Beginn unserer Zusammenarbeit gemeinsam fest. In der Regel antworte ich innerhalb eines Werktages. Du erhältst von mir klare Absprachen und keine unangenehmen Überraschungen — Verlässlichkeit ist einer meiner Kernwerte.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Wie vertraulich werden meine Unternehmensdaten behandelt?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Vertraulichkeit ist für mich selbstverständlich. Wir schließen vor Beginn der Zusammenarbeit eine Verschwiegenheitsvereinbarung (NDA) ab. Deine Unternehmensdaten, Kundendaten und alle mir anvertrauten Informationen behandle ich streng vertraulich und nach den geltenden Datenschutzbestimmungen (DSGVO).
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Gibt es eine Mindestvertragslaufzeit?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Ich setze auf langfristige Zusammenarbeit, weil ich glaube, dass echte Unterstützung Zeit braucht. Die genauen Konditionen besprechen wir individuell im Erstgespräch. Mein Ziel ist es, dass du dich nie in einer Zusammenarbeit gefangen fühlst — sondern weil du merkst, dass sie dir echten Mehrwert bringt.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            Das Controlling-Paket klingt interessant — aber brauche ich das wirklich?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Wenn du weißt, was du verdienst, aber nicht genau siehst, welche Angebote sich wirklich lohnen, welche Monate stärker sind und warum — dann ja. Ich übersetze deine Zahlen in verständliche Auswertungen, die dir konkrete Hinweise geben, wo du Gas geben und wo du optimieren solltest. Keine Finanzakrobatik, sondern klare Einblicke für bessere Entscheidungen.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ========================================================
+     SEITE 3: ÜBER MICH
+     ======================================================== -->
+<section id="ueber-mich" aria-label="Über mich">
+
+  <div class="about-hero">
+    <div class="container">
+      <div class="about-hero-content">
+        <span class="label">Über mich</span>
+        <h1>Hi, ich bin Nadine —<br>und ich liebe, was ich tue.</h1>
+        <p style="font-size:18px; color:var(--color-text-muted); max-width:520px; margin-top:16px; line-height:1.7;">
+          Business Support Partnerin aus Mettmann. Strukturmensch, Zahlenfreundin
+          und jemand, der dein Business genauso ernst nimmt wie du selbst.
+        </p>
+      </div>
+      <div class="about-hero-img">
+        <!--
+          BILDEMPFEHLUNG: Portrait (1.jpg) oder Schreibtisch-Bild
+          <img src="bilder/1.jpg" alt="Nadine Joest – Portrait" loading="lazy" />
+        -->
+        <div class="img-placeholder" style="aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; background:var(--color-primary-light); border-radius:12px 12px 0 0; font-size:13px; color:var(--color-primary);">
+          [ Portrait: bilder/1.jpg ]
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story -->
+  <div class="section" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="two-col-text">
+        <div>
+          <span class="label">Mein Weg</span>
+          <h2 id="story-heading">Von Controlling zur Selbstständigkeit — mit einem klaren Warum.</h2>
+          <div class="divider divider-left"></div>
+        </div>
+        <div>
+          <p>
+            Ich habe 13 Jahre lang in Strukturen gearbeitet, die andere aufgebaut haben —
+            in der Versicherungsbranche, in der Verwaltung und 6 Jahre lang im Controlling.
+            Ich habe Prozesse analysiert, Zahlen ausgewertet, Abläufe optimiert.
+          </p>
+          <p>
+            Irgendwann wurde mir klar: Das, was ich kann, brauchen Menschen, die sich ganz auf ihr
+            eigenes Business konzentrieren wollen. Coaches, Beraterinnen, Unternehmerinnen — die
+            Expertinnen sind in dem, was sie tun, aber nicht immer in dem, was dahinter läuft.
+          </p>
+          <p>
+            Also habe ich den Schritt gewagt. Nicht aus Notwendigkeit, sondern aus Überzeugung:
+            Ich möchte mit Menschen arbeiten, die etwas bewegen — und sie dabei unterstützen,
+            ihr Business so zu gestalten, dass es wirklich zu ihrem Leben passt.
+          </p>
+          <div class="blockquote">
+            „Ich tue, was mir wirklich Freude bereitet. Und das merkt man."
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Erfahrung Zahlen -->
+  <div class="section-sm section-alt" aria-label="Berufserfahrung in Zahlen">
+    <div class="container">
+      <div class="erfahrung-grid">
+        <div class="erfahrung-card">
+          <span class="erfahrung-zahl">13</span>
+          <p>Jahre Berufserfahrung insgesamt</p>
+        </div>
+        <div class="erfahrung-card">
+          <span class="erfahrung-zahl">6</span>
+          <p>Jahre im Controlling — Zahlen und Prozesse verstehen</p>
+        </div>
+        <div class="erfahrung-card">
+          <span class="erfahrung-zahl">100%</span>
+          <p>Remote — flexibel, digital, überall in Deutschland</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stärken / Werte -->
+  <div class="section" aria-labelledby="werte-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="label">Meine Werte & Stärken</span>
+        <h2 id="werte-heading">Was mich als Business Support Partnerin ausmacht.</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="werte-grid">
+        <div class="wert-card">
+          <h3>🧠 Analytisches Denken</h3>
+          <p>Ich erkenne Zusammenhänge, identifiziere Muster und sehe das große Bild — nicht nur die einzelne Aufgabe.</p>
+        </div>
+        <div class="wert-card">
+          <h3>🏗️ Strukturiertes Arbeiten</h3>
+          <p>Chaos liegt mir fern. Ich bringe Ordnung in Prozesse, Ablagesysteme und Arbeitsabläufe — nachhaltig und dokumentiert.</p>
+        </div>
+        <div class="wert-card">
+          <h3>✅ Zuverlässigkeit</h3>
+          <p>Was ich zusage, liefere ich. Pünktlich, vollständig, ohne Erinnerungen. Das ist für mich kein Bonus, sondern Standard.</p>
+        </div>
+        <div class="wert-card">
+          <h3>💡 Eigenständigkeit</h3>
+          <p>Ich brauche keine Micromanagement. Ich denke mit, handle vorausschauend und komme mit Lösungen — nicht mit Problemen.</p>
+        </div>
+        <div class="wert-card">
+          <h3>🤝 Verantwortungsbewusstsein</h3>
+          <p>Dein Business ist mir anvertraut. Ich behandle es mit der Sorgfalt, die es verdient — vertraulich, gewissenhaft, engagiert.</p>
+        </div>
+        <div class="wert-card">
+          <h3>💚 Unternehmerisches Mitdenken</h3>
+          <p>Ich denke nicht in Aufgaben, sondern in Wirkung. Was bringt dein Business voran? Das steht immer im Mittelpunkt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Für wen -->
+  <div class="section section-alt" aria-labelledby="fuer-wen-heading">
+    <div class="container">
+      <div class="two-col-text">
+        <div>
+          <span class="label">Für wen ich da bin</span>
+          <h2 id="fuer-wen-heading">Vielleicht bist das du.</h2>
+          <div class="divider divider-left"></div>
+          <p>
+            Ich arbeite besonders gern mit Unternehmerinnen zusammen, die einen positiven
+            Beitrag leisten — in der Persönlichkeitsentwicklung, Gesundheit, Ernährung, im Sport
+            oder in anderen sinnorientierten Bereichen.
+          </p>
+          <p>
+            Was meine Klientinnen gemeinsam haben: Sie sind Expertinnen in ihrem Bereich,
+            wissen was sie wollen — und brauchen jemanden, der das operative Fundament
+            legt, damit sie wachsen können.
+          </p>
+          <a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">
+            Lass uns kennenlernen →
+          </a>
+        </div>
+        <div>
+          <div style="background:var(--color-white); border-radius:var(--radius); padding:36px; box-shadow:var(--shadow);">
+            <h3 style="margin-bottom:20px; font-size:22px;">Du passt gut zu mir, wenn...</h3>
+            <ul class="leistung-detail-list">
+              <li>du selbstständige Coach, Beraterin, Mentorin oder Unternehmerin bist</li>
+              <li>du operative Aufgaben auslagern möchtest und Vertrauen schätzt</li>
+              <li>du dir eine langfristige, verlässliche Partnerschaft wünschst</li>
+              <li>dir Struktur und Professionalität wichtig sind</li>
+              <li>du in der Gesundheits-, Coaching- oder Beratungsbranche tätig bist</li>
+              <li>du mehr Zeit für deine Kernkompetenz gewinnen möchtest</li>
+              <li>du offen bist, mit deinen Unternehmenszahlen zu arbeiten</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ========================================================
+     SEITE 4: KONTAKT
+     ======================================================== -->
+<section id="kontakt" aria-label="Kontakt">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Kontakt</span>
+      <h1>Lass uns sprechen.</h1>
+      <p>
+        Du möchtest wissen, ob wir zusammenpassen? Am schnellsten geht's mit einem kostenlosen Erstgespräch.
+        Oder schreib mir einfach — ich antworte innerhalb eines Werktages.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="kontakt-grid">
+
+        <!-- FORMULAR -->
+        <div>
+          <span class="label">Schreib mir</span>
+          <h2 style="margin-bottom:8px;">Direktnachricht</h2>
+          <p style="margin-bottom:28px;">Erzähl mir kurz, wo du gerade stehst und womit ich dir helfen kann.</p>
+
+          <div class="kontakt-form">
+            <!--
+              TECHNISCHE HINWEISE FÜR ENTWICKLER:
+              - Formular mit PHP Mailer / Netlify Forms / Formspree verbinden
+              - Ziel-E-Mail: kontakt@nadinejoest.de
+              - DSGVO: Datenschutzerklärung verlinken
+              - CSRF-Token einbauen
+              - Honeypot-Feld gegen Spam einbauen
+            -->
+            <form
+              action="/kontakt-senden"
+              method="POST"
+              id="kontakt-formular"
+              aria-label="Kontaktformular"
+              novalidate
+            >
+              <!-- Honeypot (unsichtbar für Menschen, sichtbar für Bots) -->
+              <input type="text" name="_honeypot" style="display:none;" tabindex="-1" autocomplete="off" />
+
+              <div class="form-group">
+                <label for="name">Name <span aria-hidden="true" style="color:var(--color-primary);">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Dein Name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse <span aria-hidden="true" style="color:var(--color-primary);">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="deine@email.de"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefon">Telefon <span style="color:var(--color-text-muted); font-weight:400;">(optional)</span></label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  placeholder="0151 ..."
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nachricht">Deine Nachricht <span aria-hidden="true" style="color:var(--color-primary);">*</span></label>
+                <textarea
+                  id="nachricht"
+                  name="nachricht"
+                  placeholder="Erzähl mir kurz: Wer bist du, was machst du und wobei ich dich unterstützen kann..."
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="datenschutz"
+                  name="datenschutz"
+                  required
+                  aria-required="true"
+                />
+                <label for="datenschutz">
+                  Ich habe die <a href="#datenschutz">Datenschutzerklärung</a> gelesen und bin damit einverstanden,
+                  dass meine Daten zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden. *
+                </label>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">
+                  Nachricht absenden →
+                </button>
+              </div>
+              <p class="form-note">
+                🔒 Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- KONTAKTINFO + CALENDLY -->
+        <div class="kontakt-info">
+          <span class="label">Oder direkt buchen</span>
+          <div class="calendly-box">
+            <h3>Kostenloses Erstgespräch (30 Min.)</h3>
+            <p>
+              Kein Verkaufsgespräch. Kein Druck.
+              Wir schauen gemeinsam, ob und wie ich dir helfen kann —
+              und ob wir zueinander passen.
+            </p>
+            <a
+              href="https://calendly.com/kontakt-nadinejoest/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Termin buchen via Calendly →
+            </a>
+          </div>
+
+          <div style="margin-top:40px;">
+            <h3 style="margin-bottom:16px; font-size:22px;">Kontaktdaten</h3>
+            <ul class="kontakt-data">
+              <li>
+                <span class="kontakt-icon" aria-hidden="true">✉</span>
+                <span><a href="mailto:kontakt@nadinejoest.de">kontakt@nadinejoest.de</a></span>
+              </li>
+              <li>
+                <span class="kontakt-icon" aria-hidden="true">📱</span>
+                <span><a href="tel:+4915167076970">0151 67076970</a></span>
+              </li>
+              <li>
+                <span class="kontakt-icon" aria-hidden="true">📍</span>
+                <span>Mettmann (NRW) · Remote deutschlandweit</span>
+              </li>
+              <li>
+                <span class="kontakt-icon" aria-hidden="true">🕐</span>
+                <span>Antwort i.d.R. innerhalb von 1 Werktag</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background:var(--color-beige); border-radius:var(--radius); padding:24px; margin-top:24px;">
+            <p style="font-size:14px; margin:0; font-style:italic; color:var(--color-text-muted);">
+              „Erledigt, bevor es auf deiner To-do-Liste landet." — Das gilt auch für deine Anfrage.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ========================================================
+     IMPRESSUM (ID für Footer-Link)
+     ======================================================== -->
+<section id="impressum" style="background:var(--color-beige); display:none;" aria-label="Impressum">
+  <div class="impressum-content">
+    <h1>Impressum</h1>
+
+    <h2>Angaben gemäß § 5 TMG</h2>
+    <p>
+      Nadine Joest<br>
+      Helenenweg 12b<br>
+      40822 Mettmann
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Telefon: <a href="tel:+4915167076970">0151 67076970</a><br>
+      E-Mail: <a href="mailto:kontakt@nadinejoest.de">kontakt@nadinejoest.de</a>
+    </p>
+
+    <h2>Umsatzsteuer-ID</h2>
+    <p>
+      Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br>
+      <em>[Wird nachgereicht]</em>
+    </p>
+
+    <h2>Berufshaftpflichtversicherung</h2>
+    <p><em>[Sofern vorhanden, hier eintragen]</em></p>
+
+    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+    <p>
+      Nadine Joest<br>
+      Helenenweg 12b<br>
+      40822 Mettmann
+    </p>
+
+    <h2>Haftungsausschluss</h2>
+    <p>
+      Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt.
+      Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehme ich jedoch
+      keine Gewähr. Als Dienstleisterin bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte
+      auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+    </p>
+
+    <h2>Urheberrecht</h2>
+    <p>
+      Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf dieser Website unterliegen
+      dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet.
+      Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb
+      der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung der jeweiligen
+      Autorin bzw. des jeweiligen Autors.
+    </p>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Nadine Joest</span>
+        <p class="footer-tagline">
+          Business Support Partnerin für Coaches,<br>
+          Beraterinnen und Unternehmerinnen.
+        </p>
+        <p style="font-size:13px; margin-top:16px; font-style:italic; opacity:0.6;">
+          „Erledigt, bevor es auf deiner To-do-Liste landet."
+        </p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="#startseite">Startseite</a></li>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#ueber-mich">Über mich</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Leistungen</p>
+        <ul class="footer-links">
+          <li><a href="#leistungen">Business Support</a></li>
+          <li><a href="#leistungen">Controlling</a></li>
+          <li><a href="#leistungen">Pakete & Preise</a></li>
+          <li><a href="https://calendly.com/kontakt-nadinejoest/30min" target="_blank" rel="noopener">Erstgespräch</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Kontakt</p>
+        <ul class="footer-links">
+          <li><a href="mailto:kontakt@nadinejoest.de">kontakt@nadinejoest.de</a></li>
+          <li><a href="tel:+4915167076970">0151 67076970</a></li>
+          <li><a href="#kontakt">Nachricht schreiben</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Nadine Joest · Alle Rechte vorbehalten</span>
+      <div class="footer-legal">
+        <a href="#impressum" onclick="document.getElementById('impressum').style.display='block'; window.scrollTo(0,document.getElementById('impressum').offsetTop)">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ========================================================
+     JAVASCRIPT
+     ======================================================== -->
+<script>
+  /* FAQ Toggle */
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  /* Smooth Scroll für interne Links */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  /* Formular-Validierung (Client-side) */
+  const form = document.getElementById('kontakt-formular');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = form.querySelector('#name').value.trim();
+      const email = form.querySelector('#email').value.trim();
+      const nachricht = form.querySelector('#nachricht').value.trim();
+      const datenschutz = form.querySelector('#datenschutz').checked;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!name || !email || !nachricht || !datenschutz) {
+        alert('Bitte fülle alle Pflichtfelder aus und stimme der Datenschutzerklärung zu.');
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        alert('Bitte gib eine gültige E-Mail-Adresse ein.');
+        return;
+      }
+
+      /* In Produktion: AJAX-Request oder Form-Submit */
+      alert('Vielen Dank für deine Nachricht! Ich melde mich innerhalb eines Werktages bei dir. 😊');
+      form.reset();
+    });
+  }
+
+  /* Active Nav Link */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--color-primary)' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
