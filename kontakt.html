@@ -9,11 +9,15 @@
   <meta property="og:image" content="https://nadinejoest.de/og-bild.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RC08P9P7K7"></script>
+  <!-- Google Consent Mode (Standard: abgelehnt, bis Nutzer zustimmt) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', { 'analytics_storage': 'denied' });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RC08P9P7K7"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-RC08P9P7K7');
   </script>
