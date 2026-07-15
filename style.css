@@ -531,6 +531,11 @@ p:last-child { margin-bottom: 0; }
 }
 .paket-card.featured .paket-list li::before { color: var(--primary-light); }
 .paket-card .btn { width: 100%; }
+.paket-card--highlight {
+  border: 2px solid var(--primary);
+  background: var(--beige);
+}
+.paket-card--highlight .paket-name { color: var(--primary-dark); }
 
 /* ---- PROZESS ---- */
 .prozess-grid {
