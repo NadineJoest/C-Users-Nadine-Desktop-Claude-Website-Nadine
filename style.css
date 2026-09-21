@@ -232,9 +232,9 @@ p:last-child { margin-bottom: 0; }
   min-width: 230px;
   list-style: none;
   padding: 8px 0;
-  z-index: 200;
+  z-index: 500;
 }
-.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu.open { display: block; }
 .nav-dropdown-menu li a {
   display: block;
   padding: 10px 18px;
@@ -923,7 +923,8 @@ p:last-child { margin-bottom: 0; }
   }
   .nav-toggle { display: flex; }
   .nav-dropdown > a::after { display: none; }
-  .nav-dropdown-menu {
+  .nav-dropdown-menu,
+  .nav-dropdown-menu.open {
     display: block;
     position: static;
     box-shadow: none;

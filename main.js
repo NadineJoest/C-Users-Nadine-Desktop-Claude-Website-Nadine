@@ -97,6 +97,37 @@
   });
 })();
 
+/* ---- Dropdown Navigation ---- */
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('a');
+      var menu    = dropdown.querySelector('.nav-dropdown-menu');
+      if (!trigger || !menu) return;
+
+      trigger.addEventListener('click', function (e) {
+        var isMobile = window.innerWidth < 768;
+        if (isMobile) return; /* mobile: links navigate normally */
+        e.preventDefault();
+        var isOpen = menu.classList.toggle('open');
+        trigger.setAttribute('aria-expanded', isOpen);
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      dropdowns.forEach(function (dropdown) {
+        if (!dropdown.contains(e.target)) {
+          var menu    = dropdown.querySelector('.nav-dropdown-menu');
+          var trigger = dropdown.querySelector('a');
+          if (menu)    menu.classList.remove('open');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
+})();
+
 /* ---- Mobile Navigation ---- */
 function toggleNav() {
   const links = document.getElementById('nav-links');
