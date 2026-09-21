@@ -6,7 +6,7 @@
 (function () {
   function initReveal() {
     var grids = document.querySelectorAll(
-      '.card-grid-3, .card-grid-2, .pakete-grid, .prozess-grid, .werte-grid, .stats-grid, .footer-grid'
+      '.card-grid-3, .card-grid-4, .card-grid-2, .pakete-grid, .prozess-grid, .werte-grid, .stats-grid, .footer-grid'
     );
     grids.forEach(function (grid) {
       Array.from(grid.children).forEach(function (child, i) {
